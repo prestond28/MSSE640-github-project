@@ -1,5 +1,5 @@
 # Github Project Assignment 1
-## Part 1 - Workings of Git on a high level
+## Workings of Git on a high level
 - There are two main version control systems, Centralized and Distributed. A centralized version control system is where all the versions are stored in one central server, where as a distributed version control system stores a full history of all the versions in each user's local machine. Git is a good example of a distributed version control system.
 
 - Git snapshots are git documenting what state your files are in at a specific point in time. Each time you commit your files to Git, it takes a snapshot of the files and decides wether or not they have been changed, new files have been added, files deleted, or files stayed the same since the last snapshot. This is how versioning can stay organized, by using snapshots!
