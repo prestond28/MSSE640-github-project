@@ -119,4 +119,89 @@ git pull
 Already up to date.
 ```
 
-After you commit changes to your local repo, you still have to sync those changes with the remote repo
+After you commit changes to your local repo, you still have to sync those changes with the remote repo. Use this command:
+
+```
+git push
+```
+
+Heres an example of what I did from start to finish to sync some changes I made to my repo:
+
+```
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git add .
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git commit -m updates
+[develop c016e83] updates
+ 1 file changed, 122 insertions(+)
+ create mode 100644 Week4/Assignment3Davis.md
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 2.04 KiB | 2.04 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/prestond28/MSSE640-github-project
+   0bdce6f..c016e83  develop -> develop
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project>
+```
+
+## Branches
+
+To view branches in a repo:
+
+```
+git branch  ///this will show you local branches
+
+git branch -r  ///this will show you remote branches
+
+git branch -a  ///this will show you both local and remote branches
+```
+
+I'm going to create a new local branch, but before I do that, I'll show you what my current branches are:
+
+```
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git branch
+* develop
+  main
+```
+
+The asterisk next to the develop branch means that tha is the one I am currently on.
+
+To add a branch is simple, just add a name for the branch after the command:
+
+```
+git branch <name>
+```
+
+Example:
+
+```
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git branch test
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git branch
+* develop
+  main
+  test
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> 
+```
+
+To switch to a new branch:
+
+```
+git checkout <branch_name>
+```
+
+To delete a local branch:
+
+```
+git branch -d <branch_name>
+```
+
+Example:
+
+```
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git branch -d test
+Deleted branch test (was c016e83).
+PS C:\Preston\Regis_University\MSSE640_X70\MSSE640-github-project> git branch 
+* develop
+  main
+```
