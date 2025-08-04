@@ -5,3 +5,14 @@ Created a week 5 feature branch using VS code's UI. Here are the local and remot
 
 ![Git branches](Gitbranches1.png)
 
+After committing some changes I made (including the new branch), here is the difference between local and remote branches:
+
+![Git branches](Gitbranches2.png)
+
+After merging my week 5 branch and deleting it from my remote repo, I did:
+
+```
+git fetch -p
+```
+
+my local machine then realized the remote branch was deleted, but my local branch still remained
