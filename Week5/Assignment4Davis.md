@@ -15,4 +15,8 @@ After merging my week 5 branch and deleting it from my remote repo, I did:
 git fetch -p
 ```
 
-my local machine then realized the remote branch was deleted, but my local branch still remained
+My local machine then realized the remote branch was deleted, but my local branch still remained:
+
+![Git branches](Gitbranches3.png)
+
+This is because "git fetch -p", in the words of Github Copilot, "only removes references to remote branches that have been deleted from the remote repository. It does not delete your local branch."
